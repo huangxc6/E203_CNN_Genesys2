@@ -79,3 +79,5 @@ max_value = np.max(fc_result)
 
 
 print("最大值是:", max_value)
+
+print("Final Recognition Result:", np.argmax(fc_result))
