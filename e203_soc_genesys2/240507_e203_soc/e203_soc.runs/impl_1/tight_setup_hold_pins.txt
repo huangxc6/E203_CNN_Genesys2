@@ -1,0 +1,7 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_200_design_1_clk_wiz_0_0 |clk_200_design_1_clk_wiz_0_0 |design_1_i/conv_axi_0/inst/conv_axi_v1_0_S00_AXI_inst/u_top_conv_acc/u_acc_reg/genblk2[0].acc_r_reg[0][18]/D|
+| clk_200_design_1_clk_wiz_0_0 |clk_200_design_1_clk_wiz_0_0 |design_1_i/conv_axi_0/inst/conv_axi_v1_0_S00_AXI_inst/u_top_conv_acc/u_acc_reg/genblk2[0].acc_r_reg[0][17]/D|
+| clk_200_design_1_clk_wiz_0_0 |clk_200_design_1_clk_wiz_0_0 |design_1_i/conv_axi_0/inst/conv_axi_v1_0_S00_AXI_inst/u_top_conv_acc/u_acc_reg/genblk2[0].acc_r_reg[0][11]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

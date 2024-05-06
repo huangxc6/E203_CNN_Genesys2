@@ -1,0 +1,319 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/BaiduSyncdisk/course/Software_Hardware_Co-Design/ip'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/BaiduSyncdisk/course/Software_Hardware_Co-Design/ip/conv'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.cache/ip 
+Command: synth_design -top design_1_wrapper -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38428
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1176.223 ; gain = 66.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:275]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:555]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (1#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (2#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (3#1) [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:555]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (4#1) [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:275]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'clk_100' of module 'design_1_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:187]
+WARNING: [Synth 8-7071] port 'locked' of module 'design_1_clk_wiz_0_0' is unconnected for instance 'clk_wiz_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:187]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' has 6 connections declared, but only 4 given [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:187]
+INFO: [Synth 8-6157] synthesizing module 'design_1_conv_axi_0_0' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_conv_axi_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_conv_axi_0_0' (6#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_conv_axi_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_e203_axi_0_1' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_e203_axi_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_e203_axi_0_1' (7#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_e203_axi_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (8#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/.Xil/Vivado-12648-DESKTOP-OCH9RL1/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:266]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:266]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:266]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:266]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:266]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (9#1) [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (10#1) [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1231.770 ; gain = 122.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1231.770 ; gain = 122.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1231.770 ; gain = 122.520
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1231.770 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_cc'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_cc'
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_0/s00_couplers/auto_pc'
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc] for cell 'design_1_i/e203_axi_0'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc] for cell 'design_1_i/e203_axi_0'
+Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_conv_axi_0_0/design_1_conv_axi_0_0/design_1_conv_axi_0_0_in_context.xdc] for cell 'design_1_i/conv_axi_0'
+Finished Parsing XDC File [d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_conv_axi_0_0/design_1_conv_axi_0_0/design_1_conv_axi_0_0_in_context.xdc] for cell 'design_1_i/conv_axi_0'
+Parsing XDC File [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/e203_axi_0/inst/IOBUF_jtag_TCK/O'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'uart2_rx'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'uart2_tx'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'dut_io_pads_jtag_TCK_i_ival'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:221]
+WARNING: [Vivado 12-507] No nets matched 'IOBUF_jtag_TCK/O'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:222]
+WARNING: [Vivado 12-584] No ports matched 'mcu_TMS'. [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc:228]
+Finished Parsing XDC File [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/lab/240507_e203_soc/Genesys2_H.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.012 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1276.012 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.012 ; gain = 166.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.012 ; gain = 166.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_n_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_n_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1_p_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1_p_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for btnd_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btnd_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for btnl_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btnl_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for btnr_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btnr_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for btnu_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for btnu_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for mcu_TCK_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mcu_TCK_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for mcu_TDI_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mcu_TDI_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for mcu_TDO_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mcu_TDO_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for mcu_TMS_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mcu_TMS_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for mcu_wakeup_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for mcu_wakeup_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for qspi0_dq_0[0]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for qspi0_dq_0[0]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for qspi0_dq_0[1]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for qspi0_dq_0[1]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for qspi0_dq_0[2]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for qspi0_dq_0[2]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for qspi0_dq_0[3]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for qspi0_dq_0[3]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[0]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[0]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[1]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[1]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[2]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[2]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[3]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[3]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[4]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[4]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[5]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[5]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for sw_0[6]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sw_0[6]. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for uart0_rx_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for uart0_rx_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 46).
+Applied set_property IO_BUFFER_TYPE = NONE for uart0_tx_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 47).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for uart0_tx_0. (constraint file  d:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.gen/sources_1/bd/design_1/ip/design_1_e203_axi_0_1/design_1_e203_axi_0_1/design_1_e203_axi_0_1_in_context.xdc, line 48).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/e203_axi_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/conv_axi_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.012 ; gain = 166.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1276.012 ; gain = 166.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.012 ; gain = 166.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1316.520 ; gain = 207.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1316.594 ; gain = 207.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1335.699 ; gain = 226.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |design_1_auto_cc_0          |         1|
+|2     |design_1_auto_pc_0          |         1|
+|3     |design_1_clk_wiz_0_0        |         1|
+|4     |design_1_conv_axi_0_0       |         1|
+|5     |design_1_e203_axi_0_1       |         1|
+|6     |design_1_proc_sys_reset_0_0 |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |design_1_auto_cc          |     1|
+|2     |design_1_auto_pc          |     1|
+|3     |design_1_clk_wiz_0        |     1|
+|4     |design_1_conv_axi_0       |     1|
+|5     |design_1_e203_axi_0       |     1|
+|6     |design_1_proc_sys_reset_0 |     1|
+|7     |IBUF                      |     1|
+|8     |OBUF                      |     9|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1342.445 ; gain = 188.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1342.445 ; gain = 233.195
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1354.492 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:25 . Memory (MB): peak = 1365.977 ; gain = 256.727
+INFO: [Common 17-1381] The checkpoint 'D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/project/240507_e203_soc/e203_soc.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May  5 18:49:44 2024...
