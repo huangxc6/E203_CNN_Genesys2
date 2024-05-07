@@ -1,5 +1,5 @@
+import time
 import numpy as np
-
 
 with open('image.txt', 'r') as f:
     data = f.read().rstrip(',').split(',\n')
@@ -8,11 +8,14 @@ image_data = np.array(data, dtype=np.uint8)
 
 image = image_data.reshape((28, 28))
 
-kernel = np.array([[38, 124, 104],
-                   [43, 58, 34],
-                   [67, 92, 125]], dtype=np.uint8)
+kernel = np.array([[20, 60, 18 ],
+                   [56, 88, 105],
+                   [40, 74, 101]], dtype=np.uint8)
 
-bias = 15
+bias = 19
+
+# 开始记录时间
+start_time = time.time_ns()
 
 def img2col(image, kernel_size):
     rows, cols = image.shape
@@ -71,6 +74,9 @@ fc_bias = loaded_weights[0][1]
 fc_result = np.dot(np.array(intermediate_results).reshape(1, -1), fc_weights) + fc_bias
 print(fc_result)
 
+# 结束记录时间
+end_time = time.time_ns()
+execution_time = end_time - start_time
 
 
 print("Fully Connected Layer Result:", fc_result)
@@ -81,3 +87,5 @@ max_value = np.max(fc_result)
 print("最大值是:", max_value)
 
 print("Final Recognition Result:", np.argmax(fc_result))
+
+print("Recognition cost:", execution_time, "ns")

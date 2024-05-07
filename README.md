@@ -7,9 +7,9 @@ Final Project of Software_Hardware_Co-Design_24Spring. FPGA-based RISC-V+ Convol
 
 ## include的文件设置为verilog header和 global include
 
-<img src="image/1712648032846_ru6Lb8JKBO.jpg" style="zoom:50%;" />
+<img src="image/1712648032846_ru6Lb8JKBO.jpg" style="zoom: 33%;" />
 
-<img src="image/1712648032855_TKN3ALN-gJ.jpg" style="zoom:50%;" />
+<img src="image/1712648032855_TKN3ALN-gJ.jpg" style="zoom: 33%;" />
 
 ## e203移植
 
@@ -66,11 +66,11 @@ IOBUF #(
 // End of IOBUF_inst instantiation
 ```
 
-<img src="image/image_V78nhMcRHP.png" style="zoom:67%;" />
+<img src="image/image_V78nhMcRHP.png" style="zoom: 50%;" />
 
 使用Genesys2的PMOD\_JD作为JTAG/UART连接口：
 
-![](image/image_g8MDmqYIg8.png)
+<img src="image/image_g8MDmqYIg8.png" style="zoom:67%;" />
 
 ```verilog
     // JD (used for JTAG connection)
@@ -158,180 +158,13 @@ IOBUF #(
 
 [ 4.5. How to develop with Nuclei Studio(Ver.2022-04) — Hummingbirdv2 E203 Core and SoC 0.2.1 documentation  https://doc.nucleisys.com/hbirdv2/quick\_start/ide\_latest.html](https://doc.nucleisys.com/hbirdv2/quick_start/ide_latest.html " 4.5. How to develop with Nuclei Studio(Ver.2022-04) — Hummingbirdv2 E203 Core and SoC 0.2.1 documentation  https://doc.nucleisys.com/hbirdv2/quick_start/ide_latest.html")
 
-![](image/image_-GicXMn3uJ.png)
+<img src="image/image_-GicXMn3uJ.png" style="zoom:67%;" />
 
 连接调试器
 
-![](image/image_OtIwKChq9w.png)
-
-## LED
-
-![](image/image_i7jfVd__Jw.png)
-
-```c
-void led_blink() {
-
-    gpio_enable_output(GPIOA, 1);
-    gpio_write(GPIOA, 1, 1);
-    gpio_enable_output(GPIOA, 2);
-    gpio_write(GPIOA, 2, 0);
-    gpio_enable_output(GPIOA, 4);
-    gpio_write(GPIOA, 4, 0);
-    delay_1ms(500);
-
-    gpio_enable_output(GPIOA, 1);
-    gpio_write(GPIOA, 1, 0);
-    gpio_enable_output(GPIOA, 2);
-    gpio_write(GPIOA, 2, 1);
-    gpio_enable_output(GPIOA, 4);
-    gpio_write(GPIOA, 4, 0);
-    delay_1ms(500);
-
-    gpio_enable_output(GPIOA, 1);
-    gpio_write(GPIOA, 1, 0);
-    gpio_enable_output(GPIOA, 2);
-    gpio_write(GPIOA, 2, 0);
-    gpio_enable_output(GPIOA, 4);
-    gpio_write(GPIOA, 4, 1);
-    delay_1ms(500);
-    
-}
-```
-
-## coremark
-
-| 开源处理器 | 链接                                                         | CoreMark/MHz |
-| ---------- | ------------------------------------------------------------ | ------------ |
-| E203       | [https://github.com/riscv-mcu/e203\_hbirdv2.git](https://github.com/riscv-mcu/e203_hbirdv2.git "https://github.com/riscv-mcu/e203_hbirdv2.git") | 2.12         |
-| Xiangshan  | [https://github.com/OpenXiangShan/XiangShan.git](https://github.com/OpenXiangShan/XiangShan.git "https://github.com/OpenXiangShan/XiangShan.git") | 5.3          |
-| C910       | [https://github.com/GoWest279/XuanTie-C910-FPGA.git](https://github.com/GoWest279/XuanTie-C910-FPGA.git "https://github.com/GoWest279/XuanTie-C910-FPGA.git") | 7.10         |
-| tinyriscv  | [https://github.com/liangkangnan/tinyriscv.git](https://github.com/liangkangnan/tinyriscv.git "https://github.com/liangkangnan/tinyriscv.git") | 2.4          |
-
-```bash
-HummingBird SDK Build Time: Apr 15 2024, 16:09:03
-Download Mode: ILM
-CPU Frequency 15991767 Hz
-Start to run coremark for 500 iterations
-2K performance run parameters for coremark.
-CoreMark Size    : 666
-Total ticks      : 236054487
-Total time (secs): 14.761186
-Iterations/Sec   : 33.872617
-Iterations       : 500
-Compiler version : GCC10.2.0
-Compiler flags   : -O2 -funroll-all-loops -finline-limit=600 -ftree-dominator-opts -fno-if-conversion2 -fselective-scheduling -fno-code-hoisting -fno-common -funroll-loops -finline-functions -falign-functions=4 -falign-jumps=4 -falign-loops=4
-Memory location  : STACK
-seedcrc          : 0xe9f5
-[0]crclist       : 0xe714
-[0]crcmatrix     : 0x1fd7
-[0]crcstate      : 0x8e3a
-[0]crcfinal      : 0xa14c
-Correct operation validated. See readme.txt for run and reporting rules.
-CoreMark 1.0 : 33.872617 / GCC10.2.0 -O2 -funroll-all-loops -finline-limit=600 -ftree-dominator-opts -fno-if-conversion2 -fselective-scheduling -fno-code-hoisting -fno-common -funroll-loops -finline-functions -falign-functions=4 -falign-jumps=4 -falign-loops=4 / STACK
+<img src="image/image_OtIwKChq9w.png" style="zoom:67%;" />
 
 
-Print Personal Added Addtional Info to Easy Visual Analysis
-
-     (Iterations is: 500
-     (total_ticks is: 236054487
- (*) Assume the core running at 1 MHz
-     So the CoreMark/MHz can be caculated by: 
-     (Iterations*1000000/total_ticks) = 2.118155 CoreMark/MHz
-```
-
-![](image/image_RQe2yNWc0y.png)
-
-![](image/image_97n5uvdU8a.png)
-
-- tinyriscv
-
-![](image/image_ddxsb9PyIM.png)
-
-![](image/image_Bdkym8yro2.png)
-
-<img src="image/image_fTvlogznul.png" style="zoom:50%;" />
-
-![](image/image_cTd_INiEJp.png)
-
-## dhrystone
-
-```text
-HummingBird SDK Build Time: Apr 15 2024, 16:19:18
-Download Mode: ILM
-CPU Frequency 15991439 Hz
-
-Dhrystone Benchmark, Version 2.1 (Language: C)
-
-Program compiled without 'register' attribute
-
-Please give the number of runs through the benchmark: 
-Execution starts, 500000 runs through Dhrystone
-Execution ends
-
-Final values of the variables used in the benchmark:
-
-Int_Glob:            5
-        should be:   5
-Bool_Glob:           1
-        should be:   1
-Ch_1_Glob:           A
-        should be:   A
-Ch_2_Glob:           B
-        should be:   B
-Arr_1_Glob[8]:       7
-        should be:   7
-Arr_2_Glob[8][7]:    500010
-        should be:   Number_Of_Runs + 10
-Ptr_Glob->
-  Ptr_Comp:          -1879035584
-        should be:   (implementation-dependent)
-  Discr:             0
-        should be:   0
-  Enum_Comp:         2
-        should be:   2
-  Int_Comp:          17
-        should be:   17
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Next_Ptr_Glob->
-  Ptr_Comp:          -1879035584
-        should be:   (implementation-dependent), same as above
-  Discr:             0
-        should be:   0
-  Enum_Comp:         1
-        should be:   1
-  Int_Comp:          18
-        should be:   18
-  Str_Comp:          DHRYSTONE PROGRAM, SOME STRING
-        should be:   DHRYSTONE PROGRAM, SOME STRING
-Int_1_Loc:           5
-        should be:   5
-Int_2_Loc:           13
-        should be:   13
-Int_3_Loc:           7
-        should be:   7
-Enum_Loc:            1
-        should be:   1
-Str_1_Loc:           DHRYSTONE PROGRAM, 1'ST STRING
-        should be:   DHRYSTONE PROGRAM, 1'ST STRING
-Str_2_Loc:           DHRYSTONE PROGRAM, 2'ND STRING
-        should be:   DHRYSTONE PROGRAM, 2'ND STRING
-
- (*) User_Cycle for total run through Dhrystone with loops 500000: 
-221500035 
-       So the DMIPS/MHz can be caculated by: 
-       1000000/(User_Cycle/Number_Of_Runs)/1757 = 1.284767 DMIPS/MHz
-```
-
-<img src="image/image_-0AQAldaeg.png" style="zoom:67%;" />
-
-<img src="image/image_VqPVNtdc4I.png" style="zoom:50%;" />
-
-
-
-uart绑定gpioa第一个引脚
-
-不同引脚是否不同
 
 # e203 axi
 
@@ -348,45 +181,46 @@ uart绑定gpioa第一个引脚
 训练模型，量化权重
 
 ``` shell
+To enable the following instructions: SSE SSE2 SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
 Epoch 1/5
-422/422 [==============================] - 2s 3ms/step - loss: 2.9626 - accuracy: 0.6430 - val_loss: 0.4766 - val_accuracy: 0.9052
+422/422 [==============================] - 2s 4ms/step - loss: 2.9520 - accuracy: 0.6470 - val_loss: 0.4986 - val_accuracy: 0.9043
 Epoch 2/5
-422/422 [==============================] - 1s 3ms/step - loss: 1.7063 - accuracy: 0.7243 - val_loss: 0.5049 - val_accuracy: 0.9202
+422/422 [==============================] - 1s 3ms/step - loss: 1.7007 - accuracy: 0.7207 - val_loss: 0.5097 - val_accuracy: 0.9197
 Epoch 3/5
-422/422 [==============================] - 1s 3ms/step - loss: 1.5111 - accuracy: 0.7305 - val_loss: 0.5181 - val_accuracy: 0.9270
+422/422 [==============================] - 1s 4ms/step - loss: 1.5168 - accuracy: 0.7340 - val_loss: 0.5317 - val_accuracy: 0.9268
 Epoch 4/5
-422/422 [==============================] - 1s 3ms/step - loss: 1.4343 - accuracy: 0.7384 - val_loss: 0.5277 - val_accuracy: 0.9313
+422/422 [==============================] - 1s 3ms/step - loss: 1.4396 - accuracy: 0.7366 - val_loss: 0.5422 - val_accuracy: 0.9267
 Epoch 5/5
-422/422 [==============================] - 1s 3ms/step - loss: 1.3769 - accuracy: 0.7431 - val_loss: 0.5398 - val_accuracy: 0.9335
-313/313 [==============================] - 0s 900us/step - loss: 1.2685 - accuracy: 0.9213
-Test Accuracy: 0.9212999939918518
-[array([[[[134.]],
+422/422 [==============================] - 1s 3ms/step - loss: 1.4085 - accuracy: 0.7364 - val_loss: 0.5607 - val_accuracy: 0.9307
+313/313 [==============================] - 0s 914us/step - loss: 1.3088 - accuracy: 0.9188
+Test Accuracy: 0.9187999963760376
+[array([[[[ 20.]],
 
-        [[119.]],
+        [[ 60.]],
 
-        [[ 57.]]],
-
-
-       [[[ 27.]],
-
-        [[100.]],
-
-        [[ 48.]]],
+        [[ 18.]]],
 
 
-       [[[ 28.]],
+       [[[ 56.]],
 
-        [[ -9.]],
+        [[ 88.]],
 
-        [[ 61.]]]], dtype=float32), array([16.], dtype=float32)]
+        [[105.]]],
+
+
+       [[[ 40.]],
+
+        [[ 74.]],
+
+        [[101.]]]], dtype=float32), array([19.], dtype=float32)]
 []
-[array([[ -4.,  38., -10., ...,  22., -44.,  -5.],
-       [-14.,  34.,  -3., ...,  29., -41.,  -7.],
-       [ -8.,  40., -20., ...,  17., -48., -11.],
+[array([[ -7.,  29.,  -5., ...,  16., -29.,   4.],
+       [  1.,  27.,  -6., ...,   8., -20.,  -8.],
+       [  1.,  16.,  -9., ...,  10., -26.,   2.],
        ...,
-       [ -1.,  28., -19., ...,   5., -30.,  11.],
-       [ -6.,  34., -15., ...,  16., -35.,   7.],
-       [-19.,  36.,  -6., ...,  22., -30.,   5.]], dtype=float32), array([ -8.,  19.,  -7., -13.,   9.,   9.,  -3.,  14., -28.,  -2.],
+       [  1.,  28.,  -2., ...,   5., -22.,   3.],
+       [-15.,  21.,  -7., ...,   3., -26.,   2.],
+       [ -6.,  25., -11., ...,   9., -18.,   2.]], dtype=float32), array([ -4.,  15.,  -3.,  -8.,   5.,  10.,  -2.,   9., -18.,  -3.],
       dtype=float32)]
 []
 ```
@@ -415,5 +249,81 @@ Test Accuracy: 0.9212999939918518
 
 将卷积加速器模块封装为带axi接口的ip，主机通过axi写入开始信号，卷积模块开始识别，结果输出到led上
 
-# e203_soc
+``` verilog
+	// Add user logic here
+    top_conv_acc u_top_conv_acc(
+    .i_clk                              (S_AXI_ACLK                     ),
+    .i_rstn                             (S_AXI_ARESETN                  ), 
+    .i_start                            (slv_reg0[0]                    ),
+    .o_res                              (led                            ) 
+    );
+
+	// User logic ends
+```
+
+
+
+test.py运行识别程序，大约耗时4,965,900 ns。
+
+``` shell
+Fully Connected Layer Result: [[ -308921  -658985  1199098  -267905 -1924023  -129580  -191511 -2645061
+    -16240 -1799078]]
+最大值是: 1199098
+Final Recognition Result: 2
+Recognition cost： 4965900 ns
+```
+
+
+
+加速器运算大约耗时10,205ns。
+
+![conv_result](image/conv_result.png)
+
+
+
+python卷积前两行结果：
+
+<img src="image/conv_py1.png" alt="conv_py1" style="zoom:67%;" /> <img src="image/conv_py2.png" alt="conv_py2" style="zoom:67%;" />
+
+卷积模块前两行结果：
+
+![conv_row1](image/conv_row1.png)
+
+![conv_row2](image/conv_row2.png)
+
+卷运算结果一致
+
+# e203_cnn_soc
+
+卷积模块通过axi接口与e203连接，卷积模块地址从0x40000000开始。
+
+
+
+![e203_cnn_soc_block](image/e203_cnn_soc_block.png)
+
+
+
+<img src="image/e203_cnn_soc_address_map.png" alt="e203_cnn_soc_address_map" style="zoom:67%;" />
+
+
+
+通过**Nuclei**工具链编译调试，延时10s，向地址0x40000000最低位写1，给卷积模块发送启动信号，卷积模块开始识别，根据识别结果点亮对应的led。
+
+
+
+``` C
+#define CONV_AXI_REG0_ADDR 0x40000000
+
+	printf("Please wait 10s for recognition\n");
+    delay_1ms(10000);
+
+    unsigned int* p_reg0;
+    p_reg0 = (unsigned int *)CONV_AXI_REG0_ADDR;
+
+    *p_reg0 = 0x00000001;
+
+    delay_1ms(500);
+    printf("recognition success!\n");
+    delay_1ms(10000);
+```
 
