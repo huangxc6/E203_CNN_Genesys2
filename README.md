@@ -166,6 +166,16 @@ IOBUF #(
 
 
 
+## vivado固化流程
+
+> ref
+>
+>  https://blog.csdn.net/qq_39507748/article/details/116072620
+
+Genesys2 Flash Type : s25fl256sxxxxxx0
+
+<img src="image/flash_typoe.png" alt="flash_typoe" style="zoom: 67%;" />
+
 # e203 axi
 
 在e203 core引出axi接口，桥接到gpio，通过**Nuclei**工具链编译调试，控制gpio点亮LED。
@@ -247,7 +257,9 @@ Test Accuracy: 0.9187999963760376
 
 
 
-将卷积加速器模块封装为带axi接口的ip，主机通过axi写入开始信号，卷积模块开始识别，结果输出到led上
+将卷积加速器模块封装为带axi接口的ip，主机通过axi写入开始信号，卷积模块开始识别，结果输出到led上。
+
+![conv_axi](image/conv_axi.png)
 
 ``` verilog
 	// Add user logic here
@@ -291,11 +303,13 @@ python卷积前两行结果：
 
 ![conv_row2](image/conv_row2.png)
 
-卷运算结果一致
+卷运算结果一致。
+
+
 
 # e203_cnn_soc
 
-卷积模块通过axi接口与e203连接，卷积模块地址从0x40000000开始。
+通过AXI Interconnect实现卷积模块与e203的互联，卷积模块地址从0x40000000开始。
 
 
 
@@ -327,3 +341,26 @@ python卷积前两行结果：
     delay_1ms(10000);
 ```
 
+# PPA
+
+- Power
+
+![power_v2](image/power_v2.png)
+
+- Ultilization
+
+<img src="image/device_v2.png" alt="device_v2" style="zoom: 67%;" />
+
+![v2_ultilization](image/v2_ultilization.png)
+
+- Timing
+
+![timing_v2](image/timing_v2.png)
+
+
+
+# 不足与改进
+
+- 图片以及权重数据通过AXI传输或使用BROM存储
+- 使用脉动阵列实现卷积
+- 设计流水线提高吞吐量
