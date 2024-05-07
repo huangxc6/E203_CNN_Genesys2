@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               32M
+Start Address      0x00000000
+End Address        0x01FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00AE9D9B    May  7 09:36:21 2024    D:/BaiduSyncdisk/course/Software_Hardware_Co-Design/E203_CNN_Genesys2/e203_cnn_soc_genesys2/e203_cnn_soc/e203_cnn_soc.runs/impl_1/design_1_wrapper.bit
